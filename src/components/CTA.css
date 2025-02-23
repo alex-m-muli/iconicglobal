@@ -1,0 +1,56 @@
+/* src/components/CTA.css */
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  /* Subtle shadow to help blend the CTA with adjacent sections */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #cf8500;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+}

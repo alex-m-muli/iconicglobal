@@ -1,0 +1,54 @@
+/* src/styles/global.css */
+
+/* Global Reset & Utility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CSS Variables for Light Mode */
+:root {
+  --primary-color: #141e30;
+  --secondary-color: #2c2c2c;
+  --accent-color: #f0a500;
+  --text-color: #fff;
+  --background-color: #fff;
+  --navbar-bg: rgba(255, 255, 255, 0.2);
+  --overlay-color: rgba(20, 30, 48, 0.8);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  --primary-color: #141e30;
+  --secondary-color: #1e1e1e;
+  --accent-color: #ffa500;
+  --text-color: #eee;
+  --background-color: #121212;
+  --navbar-bg: #1f1f1f;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Section Transition (Optional) */
+.section-transition {
+  box-shadow: inset 0 -30px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,23 @@
+/* src/App.css */
+
+/* Reset some default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font and background */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Utility classes */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

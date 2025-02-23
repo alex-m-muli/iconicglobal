@@ -1,0 +1,154 @@
+/* src/components/About.css */
+
+.about {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c); /* Darker gradient to match other pages */
+  color: var(--text-color);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.about-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin: 0 auto 3rem;
+  max-width: 800px;
+}
+
+/* Technical Skills Section */
+.technical-skills {
+  margin-bottom: 3rem;
+}
+
+.subsection-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills Grid with vertical dividers between columns */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Each skill category container */
+.skill-category {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1.1rem;
+}
+
+.skill-category h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Grid layout for skills lists */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Badge styling with a subtle vibrant gradient */
+.skills-list li,
+.hobbies-list li {
+  background: linear-gradient(45deg, #cce5ff, #b3d7ff);
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.skills-list li:hover,
+.hobbies-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Vertical divider between skill categories */
+.vertical-divider {
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(0,122,204,0), rgba(0,122,204,0.5), rgba(0,122,204,0));
+  margin: 0 1rem;
+  align-self: stretch;
+}
+
+/* Hobbies Section */
+.hobbies {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hobbies-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid,
+  .hobbies {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-description {
+    text-align: center;
+  }
+  .vertical-divider {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+/* Global Reset & Utility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utility class for consistent widths */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CSS Variables for Light Mode */
+:root {
+  :root {
+  --primary-color: #141e30;
+  --secondary-color: #2c2c2c;
+  --accent-color: #f0a500;
+  --text-color: #fff;
+  --background-color: #fff;
+}
+
+}
+
+/* Dark Mode Overrides (applied when body.dark-mode is present) */
+body.dark-mode {
+  --navbar-bg: #1f1f1f;
+  --text-color: #eee;
+  --accent-color: #ffa500;
+}
